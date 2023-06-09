@@ -1,0 +1,62 @@
+---
+title: "İş Devamsızlığını Etkileyen Faktörler"
+author: 
+  - Nazlıcan Özçelik[^1]
+bibliography: ../bibliography/biblio.bib
+csl: ../csl/apa-tr.csl
+header-includes:
+  - \usepackage{polyglossia}
+  - \setmainlanguage{turkish}
+  - \usepackage{booktabs}
+  - \usepackage{caption} 
+  - \captionsetup[table]{skip=10pt}
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    fig_height: 3
+    fig_width: 4
+    keep_tex: no
+    latex_engine: xelatex
+    number_sections: yes
+    toc: no
+geometry: margin=1in
+link-citations: yes
+urlcolor: blue
+fontsize: 12pt
+biblio-style: apalike
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+<!-- ======================================================================= -->
+<!-- ============================== NOTLAR ================================= -->
+<!-- ======================================================================= -->
+[^1]: 21080201, [Github Repo](https://github.com/nazliozcelk/arasinav)
+
+# Giriş
+İş devamsızlığı, bir çalışanın işe gelmemesi veya işe geç kalmasıdır. Bu durum, işverenlerin işyerindeki verimliliği ve iş sürekliliğini etkileyebilir. İş devamsızlığı genellikle sağlık sorunları, ailevi sorunlar, iş memnuniyetsizliği veya işten ayrılma nedenleri gibi çeşitli nedenlere bağlı olabilir.  İş devamsızlığı, işverenlere önemli maddi kayıplara neden olabilir. İşverenlerin iş devamsızlığına ilişkin maliyetleri, çalışanın maaşı, kaybedilen üretkenlik ve işyeri hizmetleriyle ilgilidir. İş devamsızlığı ayrıca işyerindeki diğer çalışanları da etkileyebilir, çünkü işlerin aksamaya veya diğer çalışanların iş yükünün artmasına neden olabilir.  İşverenlerin iş devamsızlığıyla mücadele etmek için buna neden olan faktörlerin de tanımlanması önemlidir. 
+	İş devamsızlığını etkileyen faktörler birçok nedene bağlı olabilir. Çalışanların sağlık sorunları, işe devamsızlığının en yaygın nedenlerinden biridir. Çalışanların ciddi bir hastalık geçirmesi, işyerinde yaralanması veya bir sağlık sorunu nedeniyle işe devam edememesi durumunda işverenlerin çalışanlarına izin vermesi genellikle gerekir.  Çalışanların işleriyle ilgili memnuniyetsizlikleri, işe devamsızlık oranlarını artırabilir. Çalışanların işlerindeki stres, işlerinin zorluğu, işyerindeki sosyal dinamikler ve yöneticileriyle olan ilişkileri gibi faktörler iş memnuniyetsizliğine neden olabilir.  Ailevi sorunları, işe devamsızlık oranlarını artırabilir. Özellikle çocukların veya yaşlı aile üyelerinin bakımı, beklenmedik olaylar veya acil durumlar gibi ailevi sorunlar, çalışanların işe devamsızlık yapmalarına neden olabilir.  Stres faktörleri ve çalışma koşullarının beğenilmemesi de devamsızlık nedenlerinden olabilir.  
+	İş devamsızlığındaki faktörlerin tanımlanmasıyla ve önlem alınmasıyla işletmede devamsızlık nedeniyle meydana gelen üretim kaybının önüne geçilerek verimlilik ve karlılıkta artış sağlanabilir.
+
+
+## Çalışmanın Amacı
+Bir işletmede çalışanların devamsızlık yaptığı sürelerle ilgili bir model oluşturarak bu süreye etki eden faktörleri tanımlamak ve devamsızlık yaptığı süreleri tahmin eden bir model oluşturmak çalışmanın amacıdır.  Veriseti, University of California, Irvine'da bulunan Makine Öğrenmesi Sitesi'nde bulunan İş Devamsızlığı Veriseti kullanıldı (absenteeism).  Veriseti 741 gözlem sayısı azaltıldığı için sayısı azaltıldı.   
+
+## Literatür 
+İş devamsızlığını etkileyen faktörleri inceleyen ülkemizden fazla yayın çıkmamakla beraber genel olarak sağlık gibi kişisel gereksinimler, stres gibi faktörlerin etkili olabileceği düşünülmektedir (kocakulah2016absenteeism).   Ayrıca finansal kaygı, bağımlılık, eş veya aile sorunu gibi durumlarında çalışan devamsızlığı nedenleri arasında da sayılmaktadır (prater2011underlying).  Ülkemizde çıkan Koç ve arkadaşlarının yaptığı araştırmada salgın döneminde yapılan devamsızlığın iş arkadaşlarının iş yükünü arttırdığı da saptanmıştır (KOÇ2022).   En basit örnek olarak grip aşısı sonrası ortalama işgücü kaybı 1.3 gün olduğu bulunmuştur (Akazawa2003).
+
+\newpage
+# Kaynakça {#references}
+
+Kocakulah, M. C., Kelley, A. G., Mitchell, K. M., & Ruggieri, M. P. (2016). Absenteeism problems and costs: causes, effects and cures. International Business & Economics Research Journal (IBER), 15(3), 89-96.
+
+Prater, T., & Smith, K. (2011). Underlying factors contributing to presenteeism and absenteeism. Journal of Business & Economics Research (JBER), 9(6), 1-14.
+
+Koç, Z., & Alpar, Ş. E. (2022). COVID-19 Salgını Sürecinde Hemşirelerin İşe Devamsızlık Durumları ve Çalışma İstekliliği. Sağlık ve Hemşirelik Yönetimi Dergisi, 9(1). 
+
+Akazawa, M., Sindelar, J. L., & Paltiel, A. D. (2003). Economic Costs of Influenza-Related Work Absenteeism. Value in Health, 6(2), 107–115. 
+
+Absenteeism at work Data Set. web sayfası: https://archive.ics.uci.edu/ml/datasets/Absenteeism+at+work. Erişim tarihi: 14.04.2023
+<div id="refs"></div>
+
